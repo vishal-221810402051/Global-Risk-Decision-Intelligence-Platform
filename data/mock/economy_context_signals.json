@@ -1,0 +1,53 @@
+[
+  {
+    "signal_id": "mock_economy_india_food_001",
+    "country": "India",
+    "region": "National",
+    "sector": "Economy",
+    "signal_type": "food_price_pressure",
+    "timestamp": "2026-06-24T00:00:00Z",
+    "value": 58,
+    "unit": "index",
+    "baseline_value": 50,
+    "anomaly": 8,
+    "severity_hint": "context_only",
+    "source_id": "mock_economy_source",
+    "confidence": 0.65,
+    "notes": "Mock economic context only. Not used for scoring or alerts in Phase 3.",
+    "is_mock": true
+  },
+  {
+    "signal_id": "mock_economy_france_energy_001",
+    "country": "France",
+    "region": "National",
+    "sector": "Economy",
+    "signal_type": "energy_price_pressure",
+    "timestamp": "2026-06-24T00:00:00Z",
+    "value": 54,
+    "unit": "index",
+    "baseline_value": 50,
+    "anomaly": 4,
+    "severity_hint": "context_only",
+    "source_id": "mock_economy_source",
+    "confidence": 0.62,
+    "notes": "Mock economic context only. Not used for scoring or alerts in Phase 3.",
+    "is_mock": true
+  },
+  {
+    "signal_id": "mock_economy_kenya_food_001",
+    "country": "Kenya",
+    "region": "National",
+    "sector": "Economy",
+    "signal_type": "food_price_pressure",
+    "timestamp": "2026-06-24T00:00:00Z",
+    "value": 66,
+    "unit": "index",
+    "baseline_value": 50,
+    "anomaly": 16,
+    "severity_hint": "context_only",
+    "source_id": "mock_economy_source",
+    "confidence": 0.67,
+    "notes": "Mock economic context only. Not used for scoring or alerts in Phase 3.",
+    "is_mock": true
+  }
+]

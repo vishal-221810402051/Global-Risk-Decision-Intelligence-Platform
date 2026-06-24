@@ -1,0 +1,35 @@
+[
+  {
+    "country": "India",
+    "iso_code": "IND",
+    "population_millions": 1428.6,
+    "primary_crops": ["rice", "wheat", "sugarcane"],
+    "agriculture_dependency_level": "high",
+    "energy_dependency_notes": "Large cooling demand swings during heatwaves and high regional grid sensitivity.",
+    "grid_stress_sensitivity": "high",
+    "climate_vulnerability_notes": "Monsoon variability, heatwaves, and regional drought conditions can affect crops and power demand.",
+    "is_mock": true
+  },
+  {
+    "country": "France",
+    "iso_code": "FRA",
+    "population_millions": 68.0,
+    "primary_crops": ["wheat", "maize", "grapes"],
+    "agriculture_dependency_level": "moderate",
+    "energy_dependency_notes": "Heatwaves can increase cooling demand and affect thermal generation constraints.",
+    "grid_stress_sensitivity": "moderate",
+    "climate_vulnerability_notes": "Summer heat and soil moisture deficits can pressure agriculture and energy operations.",
+    "is_mock": true
+  },
+  {
+    "country": "Kenya",
+    "iso_code": "KEN",
+    "population_millions": 55.1,
+    "primary_crops": ["maize", "tea", "coffee"],
+    "agriculture_dependency_level": "high",
+    "energy_dependency_notes": "Hydropower variability and demand pressure can create operational sensitivity.",
+    "grid_stress_sensitivity": "moderate",
+    "climate_vulnerability_notes": "Rainfall deficits can affect crop stress, water availability, and hydro-linked energy pressure.",
+    "is_mock": true
+  }
+]

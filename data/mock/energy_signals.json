@@ -1,0 +1,53 @@
+[
+  {
+    "signal_id": "mock_energy_india_grid_001",
+    "country": "India",
+    "region": "Northern India",
+    "sector": "Energy",
+    "signal_type": "grid_stress_indicator",
+    "timestamp": "2026-06-24T00:00:00Z",
+    "value": 81,
+    "unit": "index",
+    "baseline_value": 58,
+    "anomaly": 23,
+    "severity_hint": "high",
+    "source_id": "mock_energy_source",
+    "confidence": 0.73,
+    "notes": "Mock grid stress indicator for heatwave workflow testing only.",
+    "is_mock": true
+  },
+  {
+    "signal_id": "mock_energy_france_cooling_001",
+    "country": "France",
+    "region": "Southern France",
+    "sector": "Energy",
+    "signal_type": "cooling_demand_index",
+    "timestamp": "2026-06-24T00:00:00Z",
+    "value": 69,
+    "unit": "index",
+    "baseline_value": 50,
+    "anomaly": 19,
+    "severity_hint": "moderate",
+    "source_id": "mock_energy_source",
+    "confidence": 0.75,
+    "notes": "Mock cooling demand signal for energy workflow testing only.",
+    "is_mock": true
+  },
+  {
+    "signal_id": "mock_energy_kenya_pressure_001",
+    "country": "Kenya",
+    "region": "National",
+    "sector": "Energy",
+    "signal_type": "energy_pressure",
+    "timestamp": "2026-06-24T00:00:00Z",
+    "value": 63,
+    "unit": "index",
+    "baseline_value": 48,
+    "anomaly": 15,
+    "severity_hint": "moderate",
+    "source_id": "mock_energy_source",
+    "confidence": 0.7,
+    "notes": "Mock energy pressure signal for hydrology-sensitive operations testing only.",
+    "is_mock": true
+  }
+]

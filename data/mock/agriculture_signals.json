@@ -1,0 +1,53 @@
+[
+  {
+    "signal_id": "mock_agri_india_crop_001",
+    "country": "India",
+    "region": "Maharashtra",
+    "sector": "Agriculture",
+    "signal_type": "crop_stress",
+    "timestamp": "2026-06-24T00:00:00Z",
+    "value": 68,
+    "unit": "index",
+    "baseline_value": 45,
+    "anomaly": 23,
+    "severity_hint": "high",
+    "source_id": "mock_agriculture_source",
+    "confidence": 0.74,
+    "notes": "Mock crop stress index for agriculture workflow testing only.",
+    "is_mock": true
+  },
+  {
+    "signal_id": "mock_agri_france_moisture_001",
+    "country": "France",
+    "region": "Occitanie",
+    "sector": "Agriculture",
+    "signal_type": "soil_moisture_stress",
+    "timestamp": "2026-06-24T00:00:00Z",
+    "value": 31,
+    "unit": "percent",
+    "baseline_value": 48,
+    "anomaly": -17,
+    "severity_hint": "moderate",
+    "source_id": "mock_agriculture_source",
+    "confidence": 0.79,
+    "notes": "Mock soil moisture stress signal for agriculture workflow testing only.",
+    "is_mock": true
+  },
+  {
+    "signal_id": "mock_agri_kenya_crop_001",
+    "country": "Kenya",
+    "region": "Eastern Kenya",
+    "sector": "Agriculture",
+    "signal_type": "crop_stress",
+    "timestamp": "2026-06-24T00:00:00Z",
+    "value": 72,
+    "unit": "index",
+    "baseline_value": 46,
+    "anomaly": 26,
+    "severity_hint": "high",
+    "source_id": "mock_agriculture_source",
+    "confidence": 0.77,
+    "notes": "Mock crop stress signal linked to rainfall deficit testing only.",
+    "is_mock": true
+  }
+]
