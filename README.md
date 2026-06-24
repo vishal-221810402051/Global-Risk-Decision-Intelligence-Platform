@@ -2,7 +2,9 @@
 
 An AI decision-intelligence platform that converts climate, economic, agriculture, energy, construction, and supply-chain signals into early operational alerts.
 
-Phase 1 creates the base application foundation only: a FastAPI backend, a React + TypeScript + Vite frontend, environment examples, documentation, and a simple health contract.
+Phase 1 created the base application foundation: a FastAPI backend, a React + TypeScript + Vite frontend, environment examples, documentation, and a simple health contract.
+
+Phase 2 adds a backend Data Source Registry for dataset metadata and traceability. It does not ingest real data or generate alerts.
 
 ## MVP Scope
 
@@ -23,9 +25,20 @@ Initial alerts:
 ## Tech Stack
 
 - Backend: Python, FastAPI, Pydantic, Uvicorn
+- Database: SQLite with SQLAlchemy
 - Frontend: React, TypeScript, Vite
 - Testing: Pytest for backend
 - Data foundation: local `data/` folders only in Phase 1
+
+## Backend API
+
+- `GET /health`
+- `GET /data-sources`
+- `GET /data-sources/{source_id}`
+- `POST /data-sources`
+- `PATCH /data-sources/{source_id}`
+
+There is no `DELETE` endpoint in Phase 2. Set `active_flag` to `false` to deactivate a source.
 
 ## Setup
 
@@ -64,4 +77,4 @@ Every phase follows:
 4. Git commit and push
 5. Next phase lock
 
-Phase 1 does not include data ingestion, data source registry, risk scoring, real datasets, dashboard analytics, maps, or charts.
+Phase 2 does not include data ingestion, risk scoring, real datasets, dashboard analytics, maps, charts, or alert generation.

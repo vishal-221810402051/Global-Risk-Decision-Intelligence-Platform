@@ -11,10 +11,10 @@ def test_health_endpoint_returns_mvp_contract() -> None:
 
     assert response.status_code == 200
     assert response.json() == {
-        "status": "ok",
-        "service": "Global Risk Decision Intelligence Platform API",
-        "version": "0.1.0",
-        "phase": "Phase 1 - Base App Setup",
-        "mvp_countries": ["India", "France", "Kenya"],
-        "mvp_sectors": ["Agriculture", "Energy"],
-    }
+            "status": "ok",
+            "service": "Global Risk Decision Intelligence Platform API",
+            "version": "0.1.0",
+            "phase": "Phase 2 - Data Source Registry",
+            "mvp_countries": ["India", "France", "Kenya"],
+            "mvp_sectors": ["Agriculture", "Energy"],
+        }

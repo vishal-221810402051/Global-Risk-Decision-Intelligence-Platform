@@ -22,6 +22,11 @@ pnpm-debug.log*
 .env.local
 .env.*.local
 
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
 # Data outputs
 data/raw/*
 data/processed/*
