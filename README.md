@@ -6,6 +6,8 @@ Phase 1 created the base application foundation: a FastAPI backend, a React + Ty
 
 Phase 2 adds a backend Data Source Registry for dataset metadata and traceability. It does not ingest real data or generate alerts.
 
+Phase 3 adds deterministic mock data fixtures and read-only backend APIs for MVP country and sector signals. It does not call real APIs, score risks, generate alerts, or add dashboard analytics.
+
 ## MVP Scope
 
 Countries:
@@ -37,6 +39,12 @@ Initial alerts:
 - `GET /data-sources/{source_id}`
 - `POST /data-sources`
 - `PATCH /data-sources/{source_id}`
+- `GET /mock-data/countries`
+- `GET /mock-data/weather`
+- `GET /mock-data/agriculture`
+- `GET /mock-data/energy`
+- `GET /mock-data/economy-context`
+- `GET /mock-data/signals`
 
 There is no `DELETE` endpoint in Phase 2. Set `active_flag` to `false` to deactivate a source.
 
@@ -77,4 +85,4 @@ Every phase follows:
 4. Git commit and push
 5. Next phase lock
 
-Phase 2 does not include data ingestion, risk scoring, real datasets, dashboard analytics, maps, charts, or alert generation.
+Phase 3 does not include real data ingestion, risk scoring, real datasets, dashboard analytics, maps, charts, or alert generation.
