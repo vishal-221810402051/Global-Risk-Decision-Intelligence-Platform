@@ -8,6 +8,8 @@ Phase 2 adds a backend Data Source Registry for dataset metadata and traceabilit
 
 Phase 3 adds deterministic mock data fixtures and read-only backend APIs for MVP country and sector signals. It does not call real APIs, score risks, generate alerts, or add dashboard analytics.
 
+Phase 4 adds read-only backend weather endpoints backed by Open-Meteo, with explicit mock fallback when the provider is unavailable. It does not add ingestion jobs, risk scoring, alerts, predictive models, or frontend UI.
+
 ## MVP Scope
 
 Countries:
@@ -45,6 +47,8 @@ Initial alerts:
 - `GET /mock-data/energy`
 - `GET /mock-data/economy-context`
 - `GET /mock-data/signals`
+- `GET /weather/current?country=India`
+- `GET /weather/forecast?country=India`
 
 There is no `DELETE` endpoint in Phase 2. Set `active_flag` to `false` to deactivate a source.
 
@@ -85,4 +89,4 @@ Every phase follows:
 4. Git commit and push
 5. Next phase lock
 
-Phase 3 does not include real data ingestion, risk scoring, real datasets, dashboard analytics, maps, charts, or alert generation.
+Phase 4 does not include ingestion jobs, risk scoring, dashboard analytics, maps, charts, alert generation, or frontend weather UI.

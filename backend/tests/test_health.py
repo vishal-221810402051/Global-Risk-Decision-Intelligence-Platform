@@ -14,7 +14,7 @@ def test_health_endpoint_returns_mvp_contract() -> None:
             "status": "ok",
             "service": "Global Risk Decision Intelligence Platform API",
             "version": "0.1.0",
-            "phase": "Phase 3 - Mock Data Pipeline",
+            "phase": "Phase 4 - Real Weather Data Integration",
             "mvp_countries": ["India", "France", "Kenya"],
             "mvp_sectors": ["Agriculture", "Energy"],
         }

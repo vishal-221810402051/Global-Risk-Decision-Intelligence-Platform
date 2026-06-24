@@ -10,15 +10,19 @@ Phase 2 adds a backend Data Source Registry for source metadata. It does not imp
 
 Phase 3 adds deterministic mock data fixtures and read-only mock-data APIs. It does not call real APIs, score risks, generate alerts, or add dashboard analytics.
 
+Phase 4 adds read-only real weather endpoints using Open-Meteo, with explicit mock fallback when the provider is unavailable. It does not add ingestion jobs, scoring, alerts, predictive models, or frontend UI.
+
 ## High-Level Components
 
 - Frontend shell: displays the project name, current phase, MVP countries, MVP sectors, and backend health status.
 - Backend API: exposes a minimal `/health` endpoint with structured project metadata.
 - Data Source Registry API: exposes metadata endpoints under `/data-sources`.
 - Mock Data API: exposes controlled fixture data under `/mock-data`.
+- Weather API: exposes normalized Open-Meteo weather data under `/weather`.
 - Configuration layer: centralizes Phase 1 constants such as app name, version, phase, local frontend origin, MVP countries, and MVP sectors.
 - Database layer: uses local SQLite and SQLAlchemy for Phase 2 registry records.
 - Data folders: store Phase 3 mock fixtures and reserve raw and processed locations for later phases.
+- Real provider clients: keep external API calls isolated behind service-layer clients.
 - Documentation: records architecture and MVP scope decisions before Phase 2 begins.
 
 ## Future Architecture Direction
